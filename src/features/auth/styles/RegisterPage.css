@@ -1,0 +1,98 @@
+.register-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.register-page__info {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.register-page__badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-secondary);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.register-page__subtitulo {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: -1.5rem;
+}
+
+.register-page__titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.register-page__descripcion {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  max-width: 400px;
+  line-height: 1.7;
+}
+
+.register-page__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.register-page__stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.register-page__stat-numero {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.register-page__stat-label {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+/* Columna derecha */
+.register-page__form-col {
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .register-page__info {
+    padding: 2rem;
+  }
+
+  .register-page__form-col {
+    padding: 1.5rem;
+  }
+}
